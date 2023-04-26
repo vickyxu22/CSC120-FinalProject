@@ -3,12 +3,16 @@ import java.util.ArrayList;
 public class Location {
     private ArrayList<Animal> animals;
 
-    private Location(ArrayList<Animal> animals) {
-        this.animals = animals;
+    public void addAnimal(Animal animal) {
+        this.animals.add(animal);
+    }
+    
+    public ArrayList<Animal> getAnimals() {
+        return animals;
     }
 
-    public void addAnimal() {
-        this.animals.add(Animal());
+    public void setAnimals(ArrayList<Animal> animals) {
+        this.animals = animals;
     }
 
 }
